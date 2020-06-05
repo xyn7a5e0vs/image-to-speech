@@ -1,0 +1,48 @@
+<html >
+  <head >
+    <title >Demo Page for "Image-to-Speech Synthesis without Text"</title>
+    <style >div.abs {left: 0px; max-width: 800px; min-width: 600px; padding: 0px;}div.tab {left: 0px; max-width: 800px; min-width: 600px; padding: 0px;}</style>
+  </head>
+  <body >
+    <article >
+      <header >
+        <h1 >Demo Page for "Image-to-Speech Synthesis without Text"</br></h1>
+      </header>
+      <div class="abs">
+        <b >Abstract:</b>
+In this paper we present the first model for directly synthesizing fluent, natural-sounding spoken audio captions for images that does not require natural language text as an intermediate representation or source of supervision. Instead, we connect the image captioning module and the speech synthesis module with a set of discrete, sub-word speech units that are discovered with a self-supervised visual grounding task. We conduct experiments on the Flickr8k spoken caption dataset in addition to a novel corpus of spoken audio captions collected for the popular MSCOCO dataset, demonstrating that our generated captions also capture diverse visual semantics of the images they describe. We investigate several different intermediate speech representations, and empirically find that the representation must satisfy several important properties in order to work well.      </div>
+      <div class="abs">
+          </br>
+          <a href="appendix.pdf"><b >[Appendix PDF]</b></a>: Detailed dataset descriptions, experimental setups, and additional experimental results.
+      </div>
+    </article>
+    <div class="tab">
+      <ol start="0">
+        <li >        <a href="0_spokencoco_sample">Samples from the SpokenCOCO dataset</a>
+        <ul >        <li >Samples from the collected SpokenCOCO dataset, including reference text, collected audio, and inferred VQ3, VQ2, WVQ units from the audio.</li>
+</ul>
+</li>
+        <li >        <a href="1_vq3_versus_text_sat-ft_model">Comparing Image-to-Speech model with traditional Image-to-Text models</a>
+        <ul >        <li >Beam search decoding results from three SAT-FT models that output words, characters, and VQ3 units, respectively (bottom 3 rows in Table 2).</li>
+</ul>
+</li>
+        <li >        <a href="2_vq3_sample_diversity_sat-ft_model">Sampling-based evaluation for Image-to-Speech models</a>
+        <ul >        <li >Beam search decoding and sampling results from the SAT-FT model trained on VQ3 units. Five samples are drawn for each image, with temperature=0.4 and k=3 (Figure 5).</li>
+</ul>
+</li>
+        <li >        <a href="3_vq3_voice_control_sat-ft_model">Disentangled voice control for Image-to-Speech models</a>
+        <ul >        <li >Synthesizing the same unit sequences with different TTS models conditioned on different speakers to demonstrate disentangled voice control. Unit sequences are generated with beam search decoding using the SAT-FT model trained on VQ3 units (Table 4).</li>
+</ul>
+</li>
+        <li >        <a href="4_unit_comparison_beam_sat_model">Comparing VQ3 with alternative learned units on beam search</a>
+        <ul >        <li >Beam search decoding results from the four SAT models that outputs VQ3, VQ2, WaveNet-VQ, and VQ3 without RLE, respectively. WaveNet-VQ and VQ3 without RLE consistently fail to produce reasonable captions (Figure 3, leftmost column).</li>
+</ul>
+</li>
+        <li >        <a href="5_unit_comparison_sample_sat_model">Comparing VQ3 with alternative learned units on sampling</a>
+        <ul >        <li >Sampling results from the four SAT models that output VQ3, VQ2, WaveNet-VQ, and VQ3 without RLE respectively. For each unit, the (temperature, top-k) configuration that achieves the highest SPICE score is shown, which are (0.1, all) for VQ3 and VQ2, (1.0, 10) for WaveNet-VQ, and (1.0, 3) for VQ3 without RLE (Figure 3, right three columns).</li>
+</ul>
+</li>
+      </ol>
+    </div>
+  </body>
+</html>

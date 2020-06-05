@@ -1,0 +1,604 @@
+<html >
+  <head >
+    <title >Disentangled voice control for Image-to-Speech models</title>
+    <style >
+thead {color:blue;}
+table {width:2780px;}
+table, th, td {border: 1px solid black;}div.abs {left: 0px; max-width: 600px; min-width: 600px; padding: 0px;}    </style>
+  </head>
+  <body >
+    <h3 >Disentangled voice control for Image-to-Speech models</br></h3>
+    <div class="abs">Synthesizing the same unit sequences with different TTS models conditioned on different speakers to demonstrate disentangled voice control. Unit sequences are generated with beam search decoding using the SAT-FT model trained on VQ3 units (Table 4).</br></div>
+&nbsp;
+    <table >
+      <thead >
+        <tr >
+          <th style="min-width:20px" rowspan="2">ID</th>
+          <th style="min-width:180px" rowspan="2">Image</th>
+          <th colspan="2">VQ3 (Beam Search) LJSpeech</th>
+          <th colspan="2">VQ3 (Beam Search) VCTK-p247</th>
+          <th colspan="2">VQ3 (Beam Search) VCTK-p231</th>
+          <th colspan="2">VQ3 (Beam Search) VCTK-p294</th>
+          <th colspan="2">VQ3 (Beam Search) VCTK-p345</th>
+          <th colspan="2">VQ3 (Beam Search) VCTK-p307</th>
+        </tr>
+        <tr >
+          <th style="min-width:200px">Caption</th>
+          <th style="min-width:230px">Unit (top)/Spectrogram (bottom)</th>
+          <th style="min-width:200px">Caption</th>
+          <th style="min-width:230px">Unit (top)/Spectrogram (bottom)</th>
+          <th style="min-width:200px">Caption</th>
+          <th style="min-width:230px">Unit (top)/Spectrogram (bottom)</th>
+          <th style="min-width:200px">Caption</th>
+          <th style="min-width:230px">Unit (top)/Spectrogram (bottom)</th>
+          <th style="min-width:200px">Caption</th>
+          <th style="min-width:230px">Unit (top)/Spectrogram (bottom)</th>
+          <th style="min-width:200px">Caption</th>
+          <th style="min-width:230px">Unit (top)/Spectrogram (bottom)</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr >
+          <td >155</td>
+          <td ><img src="data/img/155.png" height=200></td>
+          <td ><b>Text:</b></br>a small airplane sitting on the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/155.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 581 526 142 44 135 769 100 141 250 543 975 432 651 538 133 911 847 89 936 48 336 5 467 360 606 360 801 1009 398 847 936 869 254 1003 442 852 288 849 273 723 44 (...truncated 39 chars)</br><img src="data/sat_ft/vq3_beam/155.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small airplane sitting in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/155.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 581 526 142 44 135 769 100 141 250 543 975 432 651 538 133 911 847 89 936 48 336 5 467 360 606 360 801 1009 398 847 936 869 254 1003 442 852 288 849 273 723 44 (...truncated 39 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/155.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small airplane sitting in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/155.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 581 526 142 44 135 769 100 141 250 543 975 432 651 538 133 911 847 89 936 48 336 5 467 360 606 360 801 1009 398 847 936 869 254 1003 442 852 288 849 273 723 44 (...truncated 39 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/155.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small airplane sitting on the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/155.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 581 526 142 44 135 769 100 141 250 543 975 432 651 538 133 911 847 89 936 48 336 5 467 360 606 360 801 1009 398 847 936 869 254 1003 442 852 288 849 273 723 44 (...truncated 39 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/155.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small airplane sitting in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/155.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 581 526 142 44 135 769 100 141 250 543 975 432 651 538 133 911 847 89 936 48 336 5 467 360 606 360 801 1009 398 847 936 869 254 1003 442 852 288 849 273 723 44 (...truncated 39 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/155.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small airplane sitting on the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/155.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 581 526 142 44 135 769 100 141 250 543 975 432 651 538 133 911 847 89 936 48 336 5 467 360 606 360 801 1009 398 847 936 869 254 1003 442 852 288 849 273 723 44 (...truncated 39 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/155.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >1686</td>
+          <td ><img src="data/img/1686.png" height=200></td>
+          <td ><b>Text:</b></br>a man riding skis down a snowy slope </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/1686.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 807 715 1009 398 89 880 938 457 924 351 775 256 740 913 637 706 489 860 58 442 42 880 299 581 245 495 775 740 299 304 538 157 522 689  (...truncated 19 chars)</br><img src="data/sat_ft/vq3_beam/1686.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding skis down a snowy slope </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/1686.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 807 715 1009 398 89 880 938 457 924 351 775 256 740 913 637 706 489 860 58 442 42 880 299 581 245 495 775 740 299 304 538 157 522 689  (...truncated 19 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/1686.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding skis down a snowy slope </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/1686.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 807 715 1009 398 89 880 938 457 924 351 775 256 740 913 637 706 489 860 58 442 42 880 299 581 245 495 775 740 299 304 538 157 522 689  (...truncated 19 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/1686.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding skis down a snowy slope </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/1686.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 807 715 1009 398 89 880 938 457 924 351 775 256 740 913 637 706 489 860 58 442 42 880 299 581 245 495 775 740 299 304 538 157 522 689  (...truncated 19 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/1686.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding skis down a snowy slope </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/1686.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 807 715 1009 398 89 880 938 457 924 351 775 256 740 913 637 706 489 860 58 442 42 880 299 581 245 495 775 740 299 304 538 157 522 689  (...truncated 19 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/1686.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding skis down a snowy slope </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/1686.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 807 715 1009 398 89 880 938 457 924 351 775 256 740 913 637 706 489 860 58 442 42 880 299 581 245 495 775 740 299 304 538 157 522 689  (...truncated 19 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/1686.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >3233</td>
+          <td ><img src="data/img/3233.png" height=200></td>
+          <td ><b>Text:</b></br>a plastic tray with fruit sitting on top </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/3233.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 96 651 538 133 466 953 451 297 216 637 427 825 560 846 476 417 870 985 703 445 242 362 825 256 560 476 5 208 32 208 5 336 815 144 815 717 467 461 192 243 76 62 (...truncated 122 chars)</br><img src="data/sat_ft/vq3_beam/3233.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a plastic tray with fruits sitting on top of it </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/3233.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 96 651 538 133 466 953 451 297 216 637 427 825 560 846 476 417 870 985 703 445 242 362 825 256 560 476 5 208 32 208 5 336 815 144 815 717 467 461 192 243 76 62 (...truncated 122 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/3233.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a plastic tray with fruits sitting on top </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/3233.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 96 651 538 133 466 953 451 297 216 637 427 825 560 846 476 417 870 985 703 445 242 362 825 256 560 476 5 208 32 208 5 336 815 144 815 717 467 461 192 243 76 62 (...truncated 122 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/3233.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a plastic tray with fruit sitting on top of it </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/3233.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 96 651 538 133 466 953 451 297 216 637 427 825 560 846 476 417 870 985 703 445 242 362 825 256 560 476 5 208 32 208 5 336 815 144 815 717 467 461 192 243 76 62 (...truncated 122 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/3233.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a plastic tree with fruit sitting on top </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/3233.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 96 651 538 133 466 953 451 297 216 637 427 825 560 846 476 417 870 985 703 445 242 362 825 256 560 476 5 208 32 208 5 336 815 144 815 717 467 461 192 243 76 62 (...truncated 122 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/3233.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a plastic tray with fruit sitting on top </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/3233.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 96 651 538 133 466 953 451 297 216 637 427 825 560 846 476 417 870 985 703 445 242 362 825 256 560 476 5 208 32 208 5 336 815 144 815 717 467 461 192 243 76 62 (...truncated 122 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/3233.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >4882</td>
+          <td ><img src="data/img/4882.png" height=200></td>
+          <td ><b>Text:</b></br>a man sitting at a table eating pizza </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/4882.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 329 852 746 417 272 417 766 362 614 156 341 135 769 5 208 32 208 5 336 717 128 226 1009 398 847 89 320 873 924 765 27  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam/4882.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting at a table eating pizza </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/4882.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 329 852 746 417 272 417 766 362 614 156 341 135 769 5 208 32 208 5 336 717 128 226 1009 398 847 89 320 873 924 765 27  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/4882.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting at a table eating pizza </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/4882.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 329 852 746 417 272 417 766 362 614 156 341 135 769 5 208 32 208 5 336 717 128 226 1009 398 847 89 320 873 924 765 27  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/4882.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting at a table eating pizza </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/4882.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 329 852 746 417 272 417 766 362 614 156 341 135 769 5 208 32 208 5 336 717 128 226 1009 398 847 89 320 873 924 765 27  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/4882.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting at a table eating pizza </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/4882.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 329 852 746 417 272 417 766 362 614 156 341 135 769 5 208 32 208 5 336 717 128 226 1009 398 847 89 320 873 924 765 27  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/4882.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting at a table eating pizza </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/4882.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 329 852 746 417 272 417 766 362 614 156 341 135 769 5 208 32 208 5 336 717 128 226 1009 398 847 89 320 873 924 765 27  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/4882.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >6515</td>
+          <td ><img src="data/img/6515.png" height=200></td>
+          <td ><b>Text:</b></br>a parking meter on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/6515.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 320 432 72 507 535 685 765 398 89 728 971 728 962 825 1009 663 816 820 230 769 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 993 87 (...truncated 34 chars)</br><img src="data/sat_ft/vq3_beam/6515.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a parking meter on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/6515.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 320 432 72 507 535 685 765 398 89 728 971 728 962 825 1009 663 816 820 230 769 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 993 87 (...truncated 34 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/6515.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a parking meter on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/6515.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 320 432 72 507 535 685 765 398 89 728 971 728 962 825 1009 663 816 820 230 769 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 993 87 (...truncated 34 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/6515.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a parking meter on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/6515.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 320 432 72 507 535 685 765 398 89 728 971 728 962 825 1009 663 816 820 230 769 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 993 87 (...truncated 34 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/6515.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a parking meter on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/6515.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 320 432 72 507 535 685 765 398 89 728 971 728 962 825 1009 663 816 820 230 769 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 993 87 (...truncated 34 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/6515.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a parking meter on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/6515.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 320 432 72 507 535 685 765 398 89 728 971 728 962 825 1009 663 816 820 230 769 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 993 87 (...truncated 34 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/6515.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >8309</td>
+          <td ><img src="data/img/8309.png" height=200></td>
+          <td ><b>Text:</b></br>a couple of cars sitting on the side of a street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/8309.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 986 72 550 1015 587 181 913 1013 467 5 467 360 606 360 801 1009 398 847 89 100 869 254 1003 442 42 791 59 360 606 3 (...truncated 94 chars)</br><img src="data/sat_ft/vq3_beam/8309.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of birds sitting on the side of a street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/8309.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 986 72 550 1015 587 181 913 1013 467 5 467 360 606 360 801 1009 398 847 89 100 869 254 1003 442 42 791 59 360 606 3 (...truncated 94 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/8309.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cars sitting on the side of a street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/8309.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 986 72 550 1015 587 181 913 1013 467 5 467 360 606 360 801 1009 398 847 89 100 869 254 1003 442 42 791 59 360 606 3 (...truncated 94 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/8309.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cars sitting on the side of a street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/8309.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 986 72 550 1015 587 181 913 1013 467 5 467 360 606 360 801 1009 398 847 89 100 869 254 1003 442 42 791 59 360 606 3 (...truncated 94 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/8309.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cars sitting on the side of a street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/8309.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 986 72 550 1015 587 181 913 1013 467 5 467 360 606 360 801 1009 398 847 89 100 869 254 1003 442 42 791 59 360 606 3 (...truncated 94 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/8309.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cars sitting on the side of a street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/8309.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 986 72 550 1015 587 181 913 1013 467 5 467 360 606 360 801 1009 398 847 89 100 869 254 1003 442 42 791 59 360 606 3 (...truncated 94 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/8309.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >11809</td>
+          <td ><img src="data/img/11809.png" height=200></td>
+          <td ><b>Text:</b></br>a man standing in the grass with a ball </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/11809.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 337 852 442 852 288 849 273 723 445 466 953 451 297 913 1013 467 5 208 32 208 5 336 815 144 815 494 909 49 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam/11809.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing in the grass with a ball </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/11809.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 337 852 442 852 288 849 273 723 445 466 953 451 297 913 1013 467 5 208 32 208 5 336 815 144 815 494 909 49 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/11809.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing in the grass with a ball </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/11809.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 337 852 442 852 288 849 273 723 445 466 953 451 297 913 1013 467 5 208 32 208 5 336 815 144 815 494 909 49 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/11809.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing in the grass with a ball </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/11809.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 337 852 442 852 288 849 273 723 445 466 953 451 297 913 1013 467 5 208 32 208 5 336 815 144 815 494 909 49 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/11809.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing in the grass with a ball </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/11809.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 337 852 442 852 288 849 273 723 445 466 953 451 297 913 1013 467 5 208 32 208 5 336 815 144 815 494 909 49 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/11809.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing in the grass with a boat </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/11809.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 337 852 442 852 288 849 273 723 445 466 953 451 297 913 1013 467 5 208 32 208 5 336 815 144 815 494 909 49 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/11809.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >13471</td>
+          <td ><img src="data/img/13471.png" height=200></td>
+          <td ><b>Text:</b></br>a man sitting on a bench on the beach </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/13471.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 852 254 1003 442 791 582 249 427 536 113 580 66 293 202 1013 467 5 208 32 208 5 336 501 254 1003 442 791 582 249 226 9 (...truncated 31 chars)</br><img src="data/sat_ft/vq3_beam/13471.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting on a bench on the beach </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/13471.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 852 254 1003 442 791 582 249 427 536 113 580 66 293 202 1013 467 5 208 32 208 5 336 501 254 1003 442 791 582 249 226 9 (...truncated 31 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/13471.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting on a bench on the beach </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/13471.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 852 254 1003 442 791 582 249 427 536 113 580 66 293 202 1013 467 5 208 32 208 5 336 501 254 1003 442 791 582 249 226 9 (...truncated 31 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/13471.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting on a bench on the beach </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/13471.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 852 254 1003 442 791 582 249 427 536 113 580 66 293 202 1013 467 5 208 32 208 5 336 501 254 1003 442 791 582 249 226 9 (...truncated 31 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/13471.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting on a bench on a beach </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/13471.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 852 254 1003 442 791 582 249 427 536 113 580 66 293 202 1013 467 5 208 32 208 5 336 501 254 1003 442 791 582 249 226 9 (...truncated 31 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/13471.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man sitting on a bench on the beach </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/13471.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 360 606 59 801 1009 398 852 254 1003 442 791 582 249 427 536 113 580 66 293 202 1013 467 5 208 32 208 5 336 501 254 1003 442 791 582 249 226 9 (...truncated 31 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/13471.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >15061</td>
+          <td ><img src="data/img/15061.png" height=200></td>
+          <td ><b>Text:</b></br>a man riding a wave on a surfboard </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/15061.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 466 801 1009 398 329 852 993 157 120 362 766 825 560 224 790 254 442 791 59 606 360 250 543 975 461 809 284 228 622 820 654 846 336 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam/15061.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding a wave on a surfboard </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/15061.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 466 801 1009 398 329 852 993 157 120 362 766 825 560 224 790 254 442 791 59 606 360 250 543 975 461 809 284 228 622 820 654 846 336 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/15061.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding a wave on a surfboard </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/15061.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 466 801 1009 398 329 852 993 157 120 362 766 825 560 224 790 254 442 791 59 606 360 250 543 975 461 809 284 228 622 820 654 846 336 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/15061.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding a wave on a surfboard </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/15061.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 466 801 1009 398 329 852 993 157 120 362 766 825 560 224 790 254 442 791 59 606 360 250 543 975 461 809 284 228 622 820 654 846 336 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/15061.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding a wave on a surfboard </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/15061.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 466 801 1009 398 329 852 993 157 120 362 766 825 560 224 790 254 442 791 59 606 360 250 543 975 461 809 284 228 622 820 654 846 336 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/15061.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man riding a wave on a surfboard </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/15061.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 453 12 556 466 801 1009 398 329 852 993 157 120 362 766 825 560 224 790 254 442 791 59 606 360 250 543 975 461 809 284 228 622 820 654 846 336 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/15061.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >16622</td>
+          <td ><img src="data/img/16622.png" height=200></td>
+          <td ><b>Text:</b></br>a street sign and a street sign </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/16622.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 880 240 985 76 62 962 560 27 289 360 606 794 552 807 242 911 89 936 48 336 5 208 5 336 100 746 827 119 936 48 336 5 208 5 336 100 803 256 740 913 880 240 985 76 62 (...truncated 64 chars)</br><img src="data/sat_ft/vq3_beam/16622.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a street sign and a street sign </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/16622.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 880 240 985 76 62 962 560 27 289 360 606 794 552 807 242 911 89 936 48 336 5 208 5 336 100 746 827 119 936 48 336 5 208 5 336 100 803 256 740 913 880 240 985 76 62 (...truncated 64 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/16622.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a street sign and a street sign </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/16622.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 880 240 985 76 62 962 560 27 289 360 606 794 552 807 242 911 89 936 48 336 5 208 5 336 100 746 827 119 936 48 336 5 208 5 336 100 803 256 740 913 880 240 985 76 62 (...truncated 64 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/16622.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a street sign and a street sign </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/16622.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 880 240 985 76 62 962 560 27 289 360 606 794 552 807 242 911 89 936 48 336 5 208 5 336 100 746 827 119 936 48 336 5 208 5 336 100 803 256 740 913 880 240 985 76 62 (...truncated 64 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/16622.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a street sign and a street sign </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/16622.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 880 240 985 76 62 962 560 27 289 360 606 794 552 807 242 911 89 936 48 336 5 208 5 336 100 746 827 119 936 48 336 5 208 5 336 100 803 256 740 913 880 240 985 76 62 (...truncated 64 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/16622.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a street sign and a street sign </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/16622.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 880 240 985 76 62 962 560 27 289 360 606 794 552 807 242 911 89 936 48 336 5 208 5 336 100 746 827 119 936 48 336 5 208 5 336 100 803 256 740 913 880 240 985 76 62 (...truncated 64 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/16622.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >18302</td>
+          <td ><img src="data/img/18302.png" height=200></td>
+          <td ><b>Text:</b></br>a man is standing on a tennis court </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/18302.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 852 254 1003 442 791 417 272 480 1003 442 852 913 938 457 986 651 228 622 820 846 476 5 208 32</br><img src="data/sat_ft/vq3_beam/18302.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing on a tennis court </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/18302.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 852 254 1003 442 791 417 272 480 1003 442 852 913 938 457 986 651 228 622 820 846 476 5 208 32</br><img src="data/sat_ft/vq3_beam_vctk-p247/18302.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing on a tennis court </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/18302.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 852 254 1003 442 791 417 272 480 1003 442 852 913 938 457 986 651 228 622 820 846 476 5 208 32</br><img src="data/sat_ft/vq3_beam_vctk-p231/18302.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing on a tennis court </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/18302.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 852 254 1003 442 791 417 272 480 1003 442 852 913 938 457 986 651 228 622 820 846 476 5 208 32</br><img src="data/sat_ft/vq3_beam_vctk-p294/18302.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing on a tennis court </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/18302.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 852 254 1003 442 791 417 272 480 1003 442 852 913 938 457 986 651 228 622 820 846 476 5 208 32</br><img src="data/sat_ft/vq3_beam_vctk-p345/18302.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing on a tennis court </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/18302.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 852 254 1003 442 791 417 272 480 1003 442 852 913 938 457 986 651 228 622 820 846 476 5 208 32</br><img src="data/sat_ft/vq3_beam_vctk-p307/18302.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >19877</td>
+          <td ><img src="data/img/19877.png" height=200></td>
+          <td ><b>Text:</b></br>a large body of water with boats sitting on the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/19877.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 81 142 550 1015 16 293 16 176 414 790 174 807 242 313 153 313 129 815 81 831 142 552 663 816 820 230 769 5 336 815 144 815 494 181 467 224 414 522 7 522 654 27 289 1 (...truncated 108 chars)</br><img src="data/sat_ft/vq3_beam/19877.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large body of water with boats sitting in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/19877.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 81 142 550 1015 16 293 16 176 414 790 174 807 242 313 153 313 129 815 81 831 142 552 663 816 820 230 769 5 336 815 144 815 494 181 467 224 414 522 7 522 654 27 289 1 (...truncated 108 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/19877.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large body of water with boats sitting in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/19877.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 81 142 550 1015 16 293 16 176 414 790 174 807 242 313 153 313 129 815 81 831 142 552 663 816 820 230 769 5 336 815 144 815 494 181 467 224 414 522 7 522 654 27 289 1 (...truncated 108 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/19877.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large body of water with boats sitting on the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/19877.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 81 142 550 1015 16 293 16 176 414 790 174 807 242 313 153 313 129 815 81 831 142 552 663 816 820 230 769 5 336 815 144 815 494 181 467 224 414 522 7 522 654 27 289 1 (...truncated 108 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/19877.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large body of water with boats sitting in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/19877.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 81 142 550 1015 16 293 16 176 414 790 174 807 242 313 153 313 129 815 81 831 142 552 663 816 820 230 769 5 336 815 144 815 494 181 467 224 414 522 7 522 654 27 289 1 (...truncated 108 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/19877.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large body of water with boats sitting on the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/19877.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 81 142 550 1015 16 293 16 176 414 790 174 807 242 313 153 313 129 815 81 831 142 552 663 816 820 230 769 5 336 815 144 815 494 181 467 224 414 522 7 522 654 27 289 1 (...truncated 108 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/19877.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >21549</td>
+          <td ><img src="data/img/21549.png" height=200></td>
+          <td ><b>Text:</b></br>a small kitchen with a red in and in </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/21549.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 526 142 44 135 769 5 208 32 208 5 336 100 803 362 825 560 27 873 821 112 916 66 119 936 48 336 5 336 815 144 815 494 181 467 336 100 803 256 803 815 12 445 80  (...truncated 237 chars)</br><img src="data/sat_ft/vq3_beam/21549.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small kitchen with a red and pin </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/21549.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 526 142 44 135 769 5 208 32 208 5 336 100 803 362 825 560 27 873 821 112 916 66 119 936 48 336 5 336 815 144 815 494 181 467 336 100 803 256 803 815 12 445 80  (...truncated 237 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/21549.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small half a kitchen with a red bar </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/21549.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 526 142 44 135 769 5 208 32 208 5 336 100 803 362 825 560 27 873 821 112 916 66 119 936 48 336 5 336 815 144 815 494 181 467 336 100 803 256 803 815 12 445 80  (...truncated 237 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/21549.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small a kitchen with a red and tie </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/21549.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 526 142 44 135 769 5 208 32 208 5 336 100 803 362 825 560 27 873 821 112 916 66 119 936 48 336 5 336 815 144 815 494 181 467 336 100 803 256 803 815 12 445 80  (...truncated 237 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/21549.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a small street kitten is displayed on a skateboard </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/21549.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 526 142 44 135 769 5 208 32 208 5 336 100 803 362 825 560 27 873 821 112 916 66 119 936 48 336 5 336 815 144 815 494 181 467 336 100 803 256 803 815 12 445 80  (...truncated 237 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/21549.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a kitchen with a red headboard of a red headboard </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/21549.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 740 913 299 526 142 44 135 769 5 208 32 208 5 336 100 803 362 825 560 27 873 821 112 916 66 119 936 48 336 5 336 815 144 815 494 181 467 336 100 803 256 803 815 12 445 80  (...truncated 237 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/21549.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >23024</td>
+          <td ><img src="data/img/23024.png" height=200></td>
+          <td ><b>Text:</b></br>a dog walking in a dog holding a yellow frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/23024.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 502 706 489 277 174 277 352 654 846 336 5 208 32 208 5 336 815 81 831 142 595 30 685 765 398 847 89 48 100 852 329 852 288 502 706 489 277 174 277 352 654 846 336 5 208 32 (...truncated 141 chars)</br><img src="data/sat_ft/vq3_beam/23024.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a dog walking in a dog holding a yellow frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/23024.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 502 706 489 277 174 277 352 654 846 336 5 208 32 208 5 336 815 81 831 142 595 30 685 765 398 847 89 48 100 852 329 852 288 502 706 489 277 174 277 352 654 846 336 5 208 32 (...truncated 141 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/23024.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a dog walking in the dog holding a yellow frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/23024.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 502 706 489 277 174 277 352 654 846 336 5 208 32 208 5 336 815 81 831 142 595 30 685 765 398 847 89 48 100 852 329 852 288 502 706 489 277 174 277 352 654 846 336 5 208 32 (...truncated 141 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/23024.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a dog barking in a dog holding a yellow frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/23024.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 502 706 489 277 174 277 352 654 846 336 5 208 32 208 5 336 815 81 831 142 595 30 685 765 398 847 89 48 100 852 329 852 288 502 706 489 277 174 277 352 654 846 336 5 208 32 (...truncated 141 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/23024.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a dog walking in the dog holding a yellow frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/23024.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 502 706 489 277 174 277 352 654 846 336 5 208 32 208 5 336 815 81 831 142 595 30 685 765 398 847 89 48 100 852 329 852 288 502 706 489 277 174 277 352 654 846 336 5 208 32 (...truncated 141 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/23024.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a dog walking in a dog holding a yellow frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/23024.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 502 706 489 277 174 277 352 654 846 336 5 208 32 208 5 336 815 81 831 142 595 30 685 765 398 847 89 48 100 852 329 852 288 502 706 489 277 174 277 352 654 846 336 5 208 32 (...truncated 141 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/23024.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >24752</td>
+          <td ><img src="data/img/24752.png" height=200></td>
+          <td ><b>Text:</b></br>a large red bus on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/24752.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 16 87 12 445 80 654 846 176 414 284 790 174 451 297 913 1013 467 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam/24752.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large red bus on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/24752.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 16 87 12 445 80 654 846 176 414 284 790 174 451 297 913 1013 467 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/24752.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large red bus on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/24752.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 16 87 12 445 80 654 846 176 414 284 790 174 451 297 913 1013 467 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/24752.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large red bus on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/24752.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 16 87 12 445 80 654 846 176 414 284 790 174 451 297 913 1013 467 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/24752.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>an orange red bus on the side of the road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/24752.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 16 87 12 445 80 654 846 176 414 284 790 174 451 297 913 1013 467 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/24752.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large red bus on the side of a road </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/24752.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 16 87 12 445 80 654 846 176 414 284 790 174 451 297 913 1013 467 5 208 32 208 5 336 501 254 1003 442 42 791 59 360 606 360 552 807 242 801 288 791 (...truncated 41 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/24752.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >26030</td>
+          <td ><img src="data/img/26030.png" height=200></td>
+          <td ><b>Text:</b></br>a couple of cows standing in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/26030.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 821 417 110 860 689 522 135 181 913 1013 467 5 467 1013 880 216 637 427 141 536 113 580 502 1009 160 847 89 48 100  (...truncated 69 chars)</br><img src="data/sat_ft/vq3_beam/26030.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cows standing in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/26030.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 821 417 110 860 689 522 135 181 913 1013 467 5 467 1013 880 216 637 427 141 536 113 580 502 1009 160 847 89 48 100  (...truncated 69 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/26030.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cows standing in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/26030.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 821 417 110 860 689 522 135 181 913 1013 467 5 467 1013 880 216 637 427 141 536 113 580 502 1009 160 847 89 48 100  (...truncated 69 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/26030.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cows standing in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/26030.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 821 417 110 860 689 522 135 181 913 1013 467 5 467 1013 880 216 637 427 141 536 113 580 502 1009 160 847 89 48 100  (...truncated 69 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/26030.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cows standing in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/26030.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 821 417 110 860 689 522 135 181 913 1013 467 5 467 1013 880 216 637 427 141 536 113 580 502 1009 160 847 89 48 100  (...truncated 69 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/26030.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a couple of cows standing in the grass </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/26030.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 5 336 100 803 256 560 873 986 873 595 872 284 614 156 341 135 769 476 873 821 417 110 860 689 522 135 181 913 1013 467 5 467 1013 880 216 637 427 141 536 113 580 502 1009 160 847 89 48 100  (...truncated 69 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/26030.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >26166</td>
+          <td ><img src="data/img/26166.png" height=200></td>
+          <td ><b>Text:</b></br>a man standing next to a white frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/26166.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 329 728 42 0 535 880 216 637 489 121 495 151 81 749 133 715 825 560 192 863 243 76 62 740 922 913 249 226  (...truncated 24 chars)</br><img src="data/sat_ft/vq3_beam/26166.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing next to a white frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/26166.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 329 728 42 0 535 880 216 637 489 121 495 151 81 749 133 715 825 560 192 863 243 76 62 740 922 913 249 226  (...truncated 24 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/26166.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing next to a white frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/26166.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 329 728 42 0 535 880 216 637 489 121 495 151 81 749 133 715 825 560 192 863 243 76 62 740 922 913 249 226  (...truncated 24 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/26166.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing next to a white frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/26166.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 329 728 42 0 535 880 216 637 489 121 495 151 81 749 133 715 825 560 192 863 243 76 62 740 922 913 249 226  (...truncated 24 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/26166.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing next to a white frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/26166.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 329 728 42 0 535 880 216 637 489 121 495 151 81 749 133 715 825 560 192 863 243 76 62 740 922 913 249 226  (...truncated 24 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/26166.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a man standing next to a white frisbee </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/26166.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 791 728 971 728 141 536 113 580 66 880 216 637 427 536 113 580 329 398 329 728 42 0 535 880 216 637 489 121 495 151 81 749 133 715 825 560 192 863 243 76 62 740 922 913 249 226  (...truncated 24 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/26166.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >27582</td>
+          <td ><img src="data/img/27582.png" height=200></td>
+          <td ><b>Text:</b></br>a large cat sitting on a couch </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/27582.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 142 550 1015 16 293 289 873 821 417 564 953 0 535 27 289 360 606 360 801 1009 398 847 89 100 869 254 1003 442 852 288 417 272 70 480 860 537 689 289 293 202 467 5 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam/27582.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large cat sitting on a couch </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/27582.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 142 550 1015 16 293 289 873 821 417 564 953 0 535 27 289 360 606 360 801 1009 398 847 89 100 869 254 1003 442 852 288 417 272 70 480 860 537 689 289 293 202 467 5 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/27582.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large cat sitting on a couch </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/27582.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 142 550 1015 16 293 289 873 821 417 564 953 0 535 27 289 360 606 360 801 1009 398 847 89 100 869 254 1003 442 852 288 417 272 70 480 860 537 689 289 293 202 467 5 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/27582.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large cat sitting on a couch </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/27582.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 142 550 1015 16 293 289 873 821 417 564 953 0 535 27 289 360 606 360 801 1009 398 847 89 100 869 254 1003 442 852 288 417 272 70 480 860 537 689 289 293 202 467 5 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/27582.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large cat sitting on a couch </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/27582.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 142 550 1015 16 293 289 873 821 417 564 953 0 535 27 289 360 606 360 801 1009 398 847 89 100 869 254 1003 442 852 288 417 272 70 480 860 537 689 289 293 202 467 5 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/27582.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large cat sitting on a couch </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/27582.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 157 142 550 1015 16 293 289 873 821 417 564 953 0 535 27 289 360 606 360 801 1009 398 847 89 100 869 254 1003 442 852 288 417 272 70 480 860 537 689 289 293 202 467 5 20 (...truncated 4 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/27582.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >29172</td>
+          <td ><img src="data/img/29172.png" height=200></td>
+          <td ><b>Text:</b></br>the large brown bears in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/29172.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 289 176 190 723 445 110 860 58 103 502 706 427 141 250 543 820 587 181 913 1013 467 5 208 32 208 5 336 100 746 827 936 852 791 151 81 831 142 174  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam/29172.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large brown bear is in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/29172.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 289 176 190 723 445 110 860 58 103 502 706 427 141 250 543 820 587 181 913 1013 467 5 208 32 208 5 336 100 746 827 936 852 791 151 81 831 142 174  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/29172.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large brown bear is in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/29172.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 289 176 190 723 445 110 860 58 103 502 706 427 141 250 543 820 587 181 913 1013 467 5 208 32 208 5 336 100 746 827 936 852 791 151 81 831 142 174  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/29172.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large brown bear is in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/29172.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 289 176 190 723 445 110 860 58 103 502 706 427 141 250 543 820 587 181 913 1013 467 5 208 32 208 5 336 100 746 827 936 852 791 151 81 831 142 174  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/29172.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large brown bear in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/29172.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 289 176 190 723 445 110 860 58 103 502 706 427 141 250 543 820 587 181 913 1013 467 5 208 32 208 5 336 100 746 827 936 852 791 151 81 831 142 174  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/29172.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a large brown bear is in the water </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/29172.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 993 151 81 142 550 1015 16 293 289 176 190 723 445 110 860 58 103 502 706 427 141 250 543 820 587 181 913 1013 467 5 208 32 208 5 336 100 746 827 936 852 791 151 81 831 142 174  (...truncated 28 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/29172.png" height=70, width=230>          </td>
+        </tr>
+        <tr >
+          <td >30773</td>
+          <td ><img src="data/img/30773.png" height=200></td>
+          <td ><b>Text:</b></br>a bike parked on the side of a city street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam/30773.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 176 414 284 133 807 715 825 560 27 476 320 432 72 550 507 975 27 846 100 869 254 1003 442 42 791 59 360 606 360 552 807 715 362 560 846 869 254 501 582 791 59 606 360 801 1009 2 (...truncated 54 chars)</br><img src="data/sat_ft/vq3_beam/30773.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a bike parked on the side of a city street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p247/30773.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 176 414 284 133 807 715 825 560 27 476 320 432 72 550 507 975 27 846 100 869 254 1003 442 42 791 59 360 606 360 552 807 715 362 560 846 869 254 501 582 791 59 606 360 801 1009 2 (...truncated 54 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p247/30773.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a bike parked on the side of a city street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p231/30773.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 176 414 284 133 807 715 825 560 27 476 320 432 72 550 507 975 27 846 100 869 254 1003 442 42 791 59 360 606 360 552 807 715 362 560 846 869 254 501 582 791 59 606 360 801 1009 2 (...truncated 54 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p231/30773.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a bike parked on the side of a city street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p294/30773.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 176 414 284 133 807 715 825 560 27 476 320 432 72 550 507 975 27 846 100 869 254 1003 442 42 791 59 360 606 360 552 807 715 362 560 846 869 254 501 582 791 59 606 360 801 1009 2 (...truncated 54 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p294/30773.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a bike parked on the side of a city street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p345/30773.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 176 414 284 133 807 715 825 560 27 476 320 432 72 550 507 975 27 846 100 869 254 1003 442 42 791 59 360 606 360 552 807 715 362 560 846 869 254 501 582 791 59 606 360 801 1009 2 (...truncated 54 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p345/30773.png" height=70, width=230>          </td>
+          <td ><b>Text:</b></br>a bike parked on the side of a city street </br></br><b>Raw:</b></br>          <audio controls style="width:200px;"><source src="data/sat_ft/vq3_beam_vctk-p307/30773.wav" type="audio/wav"></audio>
+</td>
+          <td >
+263 32 208 263 336 501 176 414 284 133 807 715 825 560 27 476 320 432 72 550 507 975 27 846 100 869 254 1003 442 42 791 59 360 606 360 552 807 715 362 560 846 869 254 501 582 791 59 606 360 801 1009 2 (...truncated 54 chars)</br><img src="data/sat_ft/vq3_beam_vctk-p307/30773.png" height=70, width=230>          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
